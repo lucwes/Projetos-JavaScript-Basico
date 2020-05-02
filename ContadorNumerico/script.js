@@ -1,8 +1,8 @@
 function calcular() {
-  const inicio = document.getElementById("inicio");
-  const fim = document.getElementById("fim");
-  const passo = document.getElementById("passo");
-  const resultado = document.getElementById("resultado");
+  let inicio = document.getElementById("inicio");
+  let fim = document.getElementById("fim");
+  let passo = document.getElementById("passo");
+  let resultado = document.getElementById("resultado");
 
   if (
     inicio.value.length == 0 ||
