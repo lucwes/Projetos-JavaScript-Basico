@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contador</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Vamos Contador</h1>
+    </header>
+    <section>
+      <div id="dados">
+        <!-- Número do início da contagem-->
+        <p>Início: <input type="number" name="inicio" id="inicio" /></p>
+        <!--Número de término da contagem-->
+        <p>Fim: <input type="number" name="fim" id="fim" /></p>
+        <!--Número de passos da contagem-->
+        <p>Passo: <input type="number" name="passo" id="passo" /></p>
+        <!--Botão de contagem-->
+        <p>
+          <input
+            id="button"
+            type="button"
+            value="Calcular"
+            onclick="calcular()"
+          />
+        </p>
+      </div>
+      <!--div que mostrará a contagem(resultado)-->
+      <div id="resultado">Preparando a contagem...</div>
+    </section>
+    <footer>
+      <p>&copy;LucasW.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
