@@ -1,16 +1,16 @@
 function checar() {
-  var data = new Date();
-  var ano = data.getFullYear();
-  var fano = document.getElementById("txtano");
-  var res = document.getElementById("res");
+  let data = new Date();
+  let ano = data.getFullYear();
+  let fano = document.getElementById("txtano");
+  let res = document.getElementById("res");
 
   if (fano.value.length == 0 || fano.value > ano) {
     window.alert("[ERRO] Verifique os dados e tente novamente!");
   } else {
-    var fsex = document.getElementsByName("tsexo");
-    var idade = ano - Number(fano.value);
-    var gênero = "";
-    var img = document.createElement("img");
+    let fsex = document.getElementsByName("tsexo");
+    let idade = ano - Number(fano.value);
+    let gênero = "";
+    let img = document.createElement("img");
     img.setAttribute("id", "foto");
     if (fsex[0].checked) {
       gênero = "Mulher";
